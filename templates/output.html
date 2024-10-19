@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lunar Terrain</title>
+    <style>
+      body {
+        margin: 0;
+        overflow: hidden;
+      }
+      canvas {
+        display: block;
+        background-color: rgba(158, 167, 184, 0.2);
+      }
+      p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: azure;
+        background-color: black;
+        margin: 0px;
+        padding: 0px;
+        top: 10px;
+        left: 10px;
+        display: none;
+      }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/OBJLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  </head>
+  <body>
+    <p id="string">{{ file_path }}</p>
+    <canvas id="moonCanvas"></canvas>
+    <script src="../static/output.js"></script>
+  </body>
+</html>

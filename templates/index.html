@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--I was also not paid for this :3-->
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="creator" content="Krishiv Khambhayata" />
+    <meta name="description" content="Homepage" />
+    <title>Project Selene</title>
+    <link rel="stylesheet" href="../static/main.css" type="text/css" />
+    <link
+      rel="icon"
+      href="../static/img/Untitled design.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <div class="selene">
+      <div class="title">
+        <h1>
+          <span
+            class="prior_highlight"
+            style="font-weight: 100; color: #fff; font-size: 28px"
+            >Developed by&nbsp;&nbsp;</span
+          ><span class="highlight" style="font-size: 36px; color: #fff"
+            >Team ChandraKriti</span
+          >.
+        </h1>
+      </div>
+    </div>
+    <div class="selene2">
+      <p>
+        Press Matrix to see Image Enhancement. Press Model to simulate the 3D
+        Image Map.
+      </p>
+    </div>
+    <div class="block1">
+      <div class="uploadbox">
+        <form
+          action="/success"
+          method="post"
+          enctype="multipart/form-data"
+          id="upload-form"
+        >
+          <h1 style="color: black">Upload below</h1>
+          <img src="../static/img/upload.svg" alt="Upload Icon" />
+          <label for="submitted-image" class="custom-file-upload">
+            Choose File
+            <input
+              type="file"
+              name="file"
+              accept="image/*"
+              required
+              id="submitted-image"
+              onchange="previewFile()"
+            />
+          </label>
+          <div
+            class="preview-container"
+            id="preview-container"
+            style="display: none"
+          >
+            <img
+              id="image-preview"
+              src="#"
+              alt="Image Preview"
+              style="height: 80px; width: auto; margin-top: 10px"
+            />
+            <p id="file-name"></p>
+          </div>
+          <button type="submit" name="submit" onclick="setAction('/success')">
+            Matrix
+          </button>
+          <button type="submit" name="submit" onclick="setAction('/model')">
+            Model
+          </button>
+        </form>
+      </div>
+    </div>
+    <script>
+      function previewFile() {
+        const preview = document.getElementById("image-preview");
+        const fileName = document.getElementById("file-name");
+        const file = document.getElementById("submitted-image").files[0];
+        const reader = new FileReader();
+
+        reader.addEventListener(
+          "load",
+          function () {
+            preview.src = reader.result;
+            fileName.textContent = `File Name: ${file.name} `;
+            document.getElementById("preview-container").style.display =
+              "contents";
+            document.getElementById("preview-container").style.backgroundColor =
+              "white";
+          },
+          false
+        );
+
+        if (file) {
+          reader.readAsDataURL(file);
+        }
+      }
+      function setAction(action) {
+        const form = document.getElementById("upload-form");
+        form.action = action;
+        form.submit();
+      }
+    </script>
+  </body>
+</html>

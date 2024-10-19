@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<!--I was also not paid for this :3-->
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="creator" content="Krishiv Khambhayata" />
+    <meta name="description" content="Processing" />
+    <title>Processing</title>
+    <link rel="stylesheet" href="../static/processing.css" type="text/css" />
+    <link
+      rel="icon"
+      href="../static/img/Untitled design.png"
+      type="image/png"
+    />
+    <title>Enhancement</title>
+  </head>
+  <body>
+    <div class="block1">
+      <h1>Upload below</h1>
+      <div class="uploadbox">
+        <h2>Processing . . .</h2>
+        <h2>File Name: {{name}}</h2>
+      </div>
+      <div class="btmtxt">
+        <p><<< Scroll down >>></p>
+      </div>
+    </div>
+
+    <div class="block15">
+      <div class="imgclubbed">
+        <img
+          class="inputimg"
+          id="inputimg"
+          src="{{inputimgpath}}"
+          alt="Uploaded Image"
+        />
+        <img
+          class="outputimg"
+          id="outputimg"
+          src="{{outputimgpath}}"
+          alt="Enhanced Image"
+        />
+      </div>
+      <div class="download_p">
+        <a href="{{outputimgpath}}" download="{{downloadattributename}}">
+          <button>Download Output</button>
+        </a>
+        <p>
+          *Click the download button to obtain the 2.5x Enhanced Image. Scroll
+          down to see an example of the enhancement. Scroll further down to view
+          the newly generated Grey Values of the Enhanced Image!
+        </p>
+      </div>
+    </div>
+    <div class="block16">
+      <h1>Enhancement Samples:</h1>
+      <p>Zoomed-In Sample Image of <b>400x400</b> pixels.</p>
+      <img src="../static/img/inputimg_ps.png" alt="Demo Input Image" />
+      <p>
+        Zoomed In Enhanced output of the same Same Image of
+        <b>1000x1000</b> pixels.
+      </p>
+      <img src="../static/img/outputimg_ps.png" alt="Demo Output Image" />
+    </div>
+    <div class="block2">
+      <h1 style="color: red">Brightness Matrix:</h1>
+      <ul>
+        {% for brightness in matrix %}
+        <li>{{ brightness }}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </body>
+</html>

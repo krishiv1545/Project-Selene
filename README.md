@@ -8,6 +8,8 @@ The web application accepts any Lunar image captured by Chandrayaan-2's OHRC (Or
 This idea can be polished and used in Space Programs for more efficient navigation and/or in EdTech domain, both of which we're passionate about!
 
 For now though, this was a fabulous project to work upon in order to learn many technologies used here such as Flask, Jinja, Three.js, NumPy, Pillow (PIL) and more. And this is just the beginning 💪.
+![image](https://github.com/user-attachments/assets/b6e2ec06-ab2e-4549-91bd-e3407e25af18)
+
 
 ## How to run
 

@@ -69,7 +69,7 @@ Check out `crater.py`, `crater.obj`, and `crater.png` in the repository for more
 
 If you like this project, please give us a star! ⭐
 
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/project-selene.svg?style=social&label=Star&maxAge=2592000)](https://github.com/yourusername/project-selene/stargazers/)
+[![GitHub stars](https://img.shields.io/github/stars/krishiv1545/Project-Selene.svg?style=social&label=Star&maxAge=2592000)](https://github.com/krishiv1545/Project-Selene/stargazers/)
 
 ---
 

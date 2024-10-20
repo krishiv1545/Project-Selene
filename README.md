@@ -1,57 +1,84 @@
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/krishiv1545/) 
-Krishiv K.
+[# Project Selene 🌕
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/imkapil/) 
-Kapil Parmar
+[![Syntax Error '24 Hackathon](https://img.shields.io/badge/Syntax%20Error%20'24-Hackathon-blueviolet?style=for-the-badge)](https://example.com/hackathon-link)
 
+## 👨‍💻 Contributors
 
-## Project Selene
+[![LinkedIn: Krishiv K.](https://img.shields.io/badge/-Krishiv%20K.-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/krishiv1545/)](https://www.linkedin.com/in/krishiv1545/)
+[![LinkedIn: Kapil Parmar](https://img.shields.io/badge/-Kapil%20Parmar-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/imkapil/)](https://www.linkedin.com/in/imkapil/)
 
-Have been working on this Project for a while. Finally put some work in for Syntax Error '24 Hackathon :D
+## 🚀 Project Overview
 
-The web application accepts any Lunar image captured by Chandrayaan-2's OHRC (Orbital High Resolution Camera), extracts the pixel brightness to plot a 3D Lunar Map.
-This idea can be polished and used in Space Programs for more efficient navigation and/or in EdTech domain, both of which we're passionate about!
+Project Selene is a web application that transforms Lunar images captured by Chandrayaan-2's OHRC (Orbital High Resolution Camera) into 3D Lunar Maps. By extracting pixel brightness, we create an immersive 3D representation of the lunar surface.
 
-For now though, this was a fabulous project to work upon in order to learn many technologies used here such as Flask, Jinja, Three.js, NumPy, Pillow (PIL) and more. And this is just the beginning 💪.
-![image](https://github.com/user-attachments/assets/b6e2ec06-ab2e-4549-91bd-e3407e25af18)
+![Project Selene Demo](https://github.com/user-attachments/assets/b6e2ec06-ab2e-4549-91bd-e3407e25af18)
 
+### 🌟 Key Features
 
-## How to run
+- Accepts OHRC Lunar images
+- Extracts pixel brightness data
+- Generates 3D Lunar Maps
+- Interactive 3D visualization
 
-### 1. Install dependencies
+### 🛠️ Technologies Used
 
-```bash
-pip install -r requirements.txt
-```
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Jinja](https://img.shields.io/badge/Jinja-B41717?style=for-the-badge&logo=jinja&logoColor=white)
+![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=three.js&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Pillow](https://img.shields.io/badge/Pillow-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-### 2. Run app.py 
+## 🏃‍♂️ How to Run
 
-```bash
-flask run
-```
-in IDE
+1. **Install dependencies**
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-### 3. Access the app at the following URL
+2. **Run app.py**
+   ```bash
+   flask run
+   ```
 
-```bash
-http://localhost:5000/
-```
+3. **Access the app**
+   ```
+   http://localhost:5000/
+   ```
 
-### 4. Samples
+## 🌓 Sample Images
 
-To work with, I've provided certain sample images. You can access the complete dataset from https://pradan.issdc.gov.in/ch2/protected/browse.xhtml?id=ohrc
+We've provided sample images to get you started. For the complete dataset, visit:
+[ISRO Chandrayaan-2 Data Archive](https://pradan.issdc.gov.in/ch2/protected/browse.xhtml?id=ohrc)
 
-### 5. Controls
+## 🕹️ Controls
 
-Pinch and zoom in/out while viewing the Model.
+- Pinch to zoom in/out
+- Click and drag to rotate the 3D model
 
-## Future Prospects
+## 🔮 Future Prospects
 
-In the repository, you may have noticed the crater.py and crater.obj files. The program essentially creates a crater 1/3rd the depth of it's diameter. The math is roughly explained in crater.png. 
+We're working on enhancing the 3D modeling with more accurate crater representations:
 
-What we aspire is to detect craters in the input images and replace them with the craters formed through crater.py for more accurate 3D modelling. 
-All it takes for input is the diameter and center coordinates to patch over the existing 3D terrain map we created in this project.
+- Detect craters in input images
+- Replace detected craters with 3D models created by `crater.py`
+- Improve overall terrain accuracy
 
-Will love to implement upon this idea in the near future.
+Check out `crater.py`, `crater.obj`, and `crater.png` in the repository for more details on our crater modeling approach.
 
-Thank you for bearing with us, give up some love ;) "⭐"
+## 💖 Support Us
+
+If you like this project, please give us a star! ⭐
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/project-selene.svg?style=social&label=Star&maxAge=2592000)](https://github.com/yourusername/project-selene/stargazers/)
+
+---
+
+<details>
+<summary>📊 Project Stats</summary>
+
+![GitHub language count](https://img.shields.io/github/languages/count/krishiv1545/Project-Selene)
+![GitHub top language](https://img.shields.io/github/languages/top/krishiv1545/Project-Selene)
+![GitHub last commit](https://img.shields.io/github/last-commit/krishiv1545/Project-Selene)
+![GitHub issues](https://img.shields.io/github/issues/krishiv1545/Project-Selene)
+
+</details>](https://github.com/krishiv1545/Project-Selene)

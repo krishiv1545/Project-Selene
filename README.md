@@ -1,4 +1,4 @@
-[# Project Selene 🌕
+# Project Selene 🌕 
 
 [![Syntax Error '24 Hackathon](https://img.shields.io/badge/Syntax%20Error%20'24-Hackathon-blueviolet?style=for-the-badge)](https://example.com/hackathon-link)
 

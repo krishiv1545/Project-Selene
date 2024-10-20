@@ -44,3 +44,14 @@ To work with, I've provided certain sample images. You can access the complete d
 ### 5. Controls
 
 Pinch and zoom in/out while viewing the Model.
+
+## Future Prospects
+
+In the repository, you may have noticed the crater.py and crater.obj files. The program essentially creates a crater 1/3rd the depth of it's diameter. The math is roughly explained in crater.png. 
+
+What we aspire is to detect craters in the input images and replace them with the craters formed through crater.py for more accurate 3D modelling. 
+All it takes for input is the diameter and center coordinates to patch over the existing 3D terrain map we created in this project.
+
+Will love to implement upon this idea in the near future.
+
+Thank you for bearing with us, give up some love ;) "⭐"

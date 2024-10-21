@@ -74,6 +74,12 @@ If you like this project, please give us a star! ⭐
 
 ---
 
+- [GitHub Repository](https://github.com/krishiv1545/Project-Selene)
+- [Devpost Submission](https://devpost.com/software/project-selene)
+- [Project Demo Video](https://www.youtube.com/watch?v=bUBe6XmM_ps)
+- [Devfolio Project Page](https://devfolio.co/projects/project-selene-6bc1)
+
+  
 <details>
 <summary>📊 Project Stats</summary>
 
@@ -81,5 +87,3 @@ If you like this project, please give us a star! ⭐
 ![GitHub top language](https://img.shields.io/github/languages/top/krishiv1545/Project-Selene)
 ![GitHub last commit](https://img.shields.io/github/last-commit/krishiv1545/Project-Selene)
 ![GitHub issues](https://img.shields.io/github/issues/krishiv1545/Project-Selene)
-
-</details>](https://github.com/krishiv1545/Project-Selene)

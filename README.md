@@ -81,7 +81,7 @@ If you like this project, please give us a star! ⭐
 
   
 <details>
-<summary>📊 Project Stats</summary>
+<summary>📊 ChandraKriti - V1</summary>
 
 ![GitHub language count](https://img.shields.io/github/languages/count/krishiv1545/Project-Selene)
 ![GitHub top language](https://img.shields.io/github/languages/top/krishiv1545/Project-Selene)

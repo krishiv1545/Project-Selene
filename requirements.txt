@@ -2,3 +2,4 @@ Flask==2.3.3
 Pillow==10.0.1
 numpy==1.26.0
 trimesh==3.23.6
+gunicorn

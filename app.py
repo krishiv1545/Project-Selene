@@ -8,6 +8,16 @@ app = Flask(__name__)
 UPLOAD_FOLDER = 'uploads'
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
+# Create necessary directories at startup
+def create_required_directories():
+    directories = [
+        os.path.join('static', 'uploads'),
+        os.path.join('static', 'enhanced_images'),
+        os.path.join('static', 'plots')
+    ]
+    for directory in directories:
+        os.makedirs(directory, exist_ok=True)
+
 def process_image(filepath, pixel_size):
     input_img = Image.open(filepath).convert(mode="L").resize((pixel_size, pixel_size))
     img = input_img.transpose(method=Image.Transpose.FLIP_TOP_BOTTOM)
@@ -19,7 +29,8 @@ def process_image(filepath, pixel_size):
     print(np.max(grounded_matrix))
 
     output_img = Image.fromarray(unflipped_pixel_data)
-    output_img.save("static/enhanced_images/output.png")
+    output_path = os.path.join("static", "enhanced_images", "output.png")
+    output_img.save(output_path)
     return grounded_matrix
 
 def generate_mesh(grounded_matrix, input_filename, save_path):
@@ -46,31 +57,32 @@ def success():
     if request.method == 'POST':
         f = request.files['file']
         pixel_size = 1000
-        filepath = f"static/uploads/{f.filename}"
+        filepath = os.path.join("static", "uploads", f.filename)
         f.save(filepath)
-        save_path = "static/plots"
+        save_path = os.path.join("static", "plots")
         grounded_matrix = process_image(filepath, pixel_size)
         mesh_path = generate_mesh(grounded_matrix, f.filename, save_path)
         inputimgpath = f"../{filepath}"
-        outputimgpath = "enhanced_images/output.png"
-        outputimgpath = f"../static/{outputimgpath}"
+        outputimgpath = "../static/enhanced_images/output.png"
         downloadattributename = f"enhanced_{f.filename}.png"
         print(downloadattributename)
         mesh_path_relative = os.path.relpath(mesh_path, start='static')
-        return render_template("processing.html", name=f.filename, matrix=grounded_matrix.tolist(), mesh_path=mesh_path_relative, inputimgpath = inputimgpath, outputimgpath = outputimgpath, downloadattributename = downloadattributename)
+        return render_template("processing.html", name=f.filename, matrix=grounded_matrix.tolist(), 
+                              mesh_path=mesh_path_relative, inputimgpath=inputimgpath, 
+                              outputimgpath=outputimgpath, downloadattributename=downloadattributename)
 
 @app.route('/model', methods=['POST'])
 def model():
     if request.method == 'POST':
         f = request.files['file']
         pixel_size = 1000
-        filepath = f"static/uploads/{f.filename}"
+        filepath = os.path.join("static", "uploads", f.filename)
         f.save(filepath)
-        save_path = r"static\plots"
+        save_path = os.path.join("static", "plots")
         grounded_matrix = process_image(filepath, pixel_size)
         mesh_path = generate_mesh(grounded_matrix, f.filename, save_path)
-        string_path = mesh_path
-        return render_template("output.html", file_path=string_path)
+        return render_template("output.html", file_path=mesh_path)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    create_required_directories()  # Create directories before starting the app
+    app.run(debug=False)
